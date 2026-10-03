@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia com Matrizes</title>
+    <link rel="icon" type="image/png" href="Imagens/Logo.png">
+    <link rel="stylesheet" href="cript.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="head-titles">
+                <hgroup class="hg-titles">
+                    <h1>Matemática, Tecnologia<br>e Segurança de Dados</h1>
+                    <h3></h3>
+                </hgroup>
+            </div>
+            <nav class="grid-menu"> 
+                
+                <a href="index.html" class="items" id="dif-item">Página anterior</a> 
+            </nav>
+        </header>
+        <section class="matriz-show">
+            <div class="m-input">
+                <input type="text" class="input" placeholder="Digite uma palavra...">
+            </div>
+            <div class="answer-input">
+                <div class="answer-numbers">
+                    <p>Abaixo terão os números criptografados</p>
+                    <div class="cript">
+                        <p>Digite algo no campo acima.</p>
+                    </div>
+                </div>
+                <div class="answer-text">
+                    <p>Abaixo terá as letras criptografadas</p>
+                    <div class="uncript">
+                        <p>Digite algo no campo acima.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid-instructs">
+            <div class="show">
+                <h2> Criptografar </h2>
+                <p>A matriz base (ou matriz genérica) é utilizada para transformar as letras que digitou em outras letras, criptografando-as a partir da multiplicação.<br><br></p>
+
+                <h3>Como ocorre?</h3>
+                <p>Multiplicando o texto, cujo foi transformado, também, em matriz, pela matriz a seguir pela forma coluna x linha (i x j) </p>
+                <p>A nossa matriz é definida por "A = [12] [13]" (Veja melhor no cartaz)<br></p>
+            </div>
+            <div class="show">
+                <h2>Descriptografar</h2>
+                <p>O processo ocorre de forma muito similar à criptografar, porém, utiliza-se a matriz genérica inversa na multiplicação.<br><br></p>
+                <h3>Como ocorre?</h3>
+                <p>A matriz genérica inversa multiplica-se com a matriz gerada pela palavra de forma idêntica ao processo anterior, contudo, de forma inversa, ou seja, desenvolve os números originais da palavra após a criptografia, descriptografando-a.<br></p>
+                <p>A matriz inversa é definida por B = [3 -2][-1 1].</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-div">
+                <h2>Direitos</h2>
+                <p>Todos os direitos reservados ao Balacobaco's Group.</p>
+            </div>
+            <div class="footer-div">
+                <h2>Produtores</h2>
+                <ul class="footer-desc">
+                    <li> <a href="https://www.instagram.com/filipe._muniz/" class="mention" target="_blank">Filipe Muniz</a> </li>
+                    <li> <a href="https://www.instagram.com/khaikimiranda/" class="mention">Khaiki Miranda</a> </li>
+                    <li> <a href="https://www.instagram.com/_tuyzz/" class="mention" target="_blank">Arthur Zandoná</a> </li>
+                    <li> <a href="https://www.instagram.com/pedrox.__tn/" class="mention" target="_blank">Pedro Henrique</a> </li>
+                    <li> <a href="https://www.instagram.com/victoria._gabriele/" class="mention" target="_blank">Victoria Gabriele</a> </li>
+                </ul>   
+            </div>
+            <div class="footer-div">
+                <h2>Menção especial</h2 >
+                <p>Uma menção ao professor idealizador desse projeto, <a href="https://www.instagram.com/mprbueno/" target="_blank"><strong>Marcos Bueno</strong></a>, que auxiliou no projeto de forma geral e permitiu sua produção.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="cript.js" defer></script>
+</body>
+</html>
