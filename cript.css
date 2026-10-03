@@ -265,3 +265,35 @@ body {
        grid-template-rows: repeat(2, 1fr);
    }
 }
+
+.qr-card {
+   background: #fff;
+   padding: 12px;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+   text-align: center;
+   width: max-content;
+   margin: 24px auto;
+}
+
+.qr-card img {
+    display: block;
+    width: 160px;
+    height: auto;
+}
+
+.qr-card p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #222;
+}
+
+@media (min-width: 1400px) {
+    .qr-card {
+        position: fixed;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+}
